@@ -1,0 +1,24 @@
+.animated-hue {
+    font-weight: 800;
+    display: inline-block;
+    color: #A2FE73;
+    background-image: linear-gradient(145deg, #A2FE73, #35FDB2);
+    background-clip: text;
+    animation-name: hue;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes hue {
+   from {
+    filter:hue-rotate(0deg) 
+   }
+   to {
+    filter:hue-rotate(-360deg) 
+   }
+  }
