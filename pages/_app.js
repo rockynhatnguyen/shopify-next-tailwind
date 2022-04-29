@@ -1,4 +1,7 @@
 import 'tailwindcss/tailwind.css'
+import 'swiper/scss'
+import 'swiper/scss/pagination'
+import 'swiper/scss/navigation'
 import Layout from '../components/Layout'
 import ShopProvider from '../context/shopContext'
 import { useRouter } from 'next/router'
