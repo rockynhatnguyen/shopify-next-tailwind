@@ -19,15 +19,15 @@ export default function Nav() {
                     <span className="text-lg pt-1 font-bold">Shopify Next.js</span>
                 </a>
             </Link>
-            <a 
-              className="relative text-md font-bold cursor-pointer group"
+            <button 
+              className="relative mr-6 text-md font-bold cursor-pointer group"
               onClick={() => setCartOpen(!cartOpen)}
               >
               Cart
               <span className="absolute top-0 left-9 text-xs font-light text-white bg-red-700 py-3 px-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <span className="absolute transform translate-y-[-50%] translate-x-[-50%]">{cartQuantity}</span>
               </span>
-            </a>
+            </button>
             <MiniCart cart={cart} />
         </div>
     </header>
